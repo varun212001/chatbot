@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Chatbot</title>
+
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Chatting Robot - Made with pure javascript " />
+<meta property="og:description"        content="A chatbot developed by kashan haider, this chatbot can perform many special task such as provide guidance to users on your website. the chatbot has many special features to entertain users, user will never get bored while chatting with this chatbot" />
+<meta property="og:image" content="https://yourskillsteacher.com/JSBOT/chatbotfb.png" />
+
+<link rel="icon" href="robot.png" type="image/png" sizes="16x16">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css.css"> <link rel="stylesheet" type="text/css" href="fontawesome.css">
+
+
+
+
+<!--Caching Files In Service Worker  so that these files can be accessible while offline-->
+<Script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+
+
+
+</Script>
+</head>
+
+<body <div style="background-image: url('whatsapp.png');"></div>
+  
+
+<fieldset style=" border-radius: 5px;  min-height: 480px" id="myList">
+
+<div id="rdiv"><div id="childdiv"><span id="rspan"><p class="mainp"style="font-size: 20px;"id="rp">Hi, Would you  <a target="_blank"href="https://www.facebook.com/1793417630949051"><img style="animation: bounce 1s infinite alternate; margin: 3px; box-shadow: 0px 0px 3px black; border-radius:50%;margin-bottom: -15px;"width="25px" src="like.png"></a>   Me On <a target="_blank" style="text-decoration: none;color:white;"href="https://www.facebook.com/1793417630949051">Facebook</a>?<br><br>
+<font style="font-size: 17px">Special Features:-</font>
+<ul style="font-size:14px; list-style: none;"><li>BackGround Color Change.</li><li>Background Image Change.</li><li>Can Remember Your Name. </li><li>Can Send Random Replies.</li></ul></p></span><img src="robot.png" alt="RobotPic" id="rimage"><div id="rdiv2"></div></div></div>
+<br>
+<br><br>
+<br>
+<br>
+</fieldset>
+
+
+<br>
+<div style=" height: 100px;display: inline">
+<input type="text"  onkeydown="if (event.keyCode == 13)  usermessage()" maxlength="100" id="usrinput"  >
+
+<input type="image" class="sendmsg" src="sendmsg.png"   onclick="usermessage()">
+</div>
+<br>
+<script src="js.js"></script>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
